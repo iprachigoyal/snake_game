@@ -1,0 +1,125 @@
+/* Made by Prachi Goyal */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #DCD6E8;
+}
+.prachigoyal__wrapper {
+  width: 65vmin;
+  height: 77vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #B57EDC;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+.prachigoyal__game-details {
+  color: #FEFEFE;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.prachigoyal__play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #8B5DAC;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.prachigoyal__play-board .prachigoyal__food {
+  background: #DAA520;
+}
+.prachigoyal__play-board .prachigoyal__head {
+  background: #7FFFD4;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #B8C6DC;
+  width: calc(100% / 3);
+  cursor: pointer;
+}
+
+.dead{
+  cursor: default !important; 
+  pointer-events: none !important;
+}
+i:not(.dead){
+  background: #8B5DAC;
+}
+
+/* Level Selector Styles */
+.prachigoyal__level-selector {
+  display: inline-block;
+  margin: 18px 28%;
+  vertical-align: middle;
+  float: center;
+}
+
+.prachigoyal__level-selector label {
+  color: #FEFEFE;
+  font-size: 1.2em;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+.prachigoyal__level-selector select {
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px #FEFEFE;
+  background-color: #8B5DAC;
+  color: #FEFEFE;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; 
+}
+
+
+@media screen and (max-width: 800px) {
+  .prachigoyal__wrapper {
+    width: 90vmin;
+    height: 135vmin;
+  }
+  .prachigoyal__game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: block;
+  }
+  .controls__up{
+    display:flex;
+    margin: auto;
+  }
+  .controls__below{
+    display:flex;
+  }
+
+  .controls i {
+    padding: 25px 0;
+    font-size: 1rem;
+  }
+  .prachigoyal__level-selector {
+    margin: 18px 15%;
+  }
+}

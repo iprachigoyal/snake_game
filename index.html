@@ -1,0 +1,46 @@
+<!-- Made by Prachi Goyal -->
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+<meta name="description" content="The Snake Game by Prachi Goyal is a fun and interactive game built with HTML, CSS, and JavaScript. Its well-structured code, clear design, and responsiveness make it a great example of a classic game brought to the web.">
+<title>Snake Game by Prachi Goyal</title>
+<link href="style.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+</head>
+<body>
+<div class="prachigoyal__wrapper">
+<div class="prachigoyal__game-details">
+<span class="prachigoyal__score">Score: 0</span>
+<span class="prachigoyal__high-score">High Score: 0</span>
+</div>
+<div class="prachigoyal__play-board"></div>
+<div class="prachigoyal__level-selector">
+  <label for="level">Select Level:</label>
+  <select id="level" name="level">
+    <option value="very-easy">Very Easy</option>
+    <option value="easy">Easy</option>
+    <option selected="selected" value="medium">Medium</option>
+    <option value="hard">Hard</option>
+    <option value="very-hard">Very Hard</option>
+  </select>
+</div>
+<div class="controls">
+  <div class="controls__up">
+    <i class="fa-solid dead"></i>
+    <i class="fa-solid fa-arrow-up-long" data-key="ArrowUp"></i>
+    <i class="fa-solid dead"></i>
+  </div>
+  <div class="controls__below">
+    <i class="fa-solid fa-arrow-left-long" data-key="ArrowLeft"></i>
+    <i class="fa-solid fa-arrow-down-long" data-key="ArrowDown"></i>
+    <i class="fa-solid fa-arrow-right-long" data-key="ArrowRight"></i>
+  </div>
+</div>
+</div>
+</body>
+</html>
