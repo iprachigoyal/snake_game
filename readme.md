@@ -5,6 +5,9 @@ Snake Game by Prachi Goyal - Documentation
 # 1. Introduction:
 The Snake Game by Prachi Goyal is an interactive rendition of the classic Snake game. Players control a snake that grows longer each time it consumes food. The game ends if the snake collides with its own body.
 
+![game_review](https://github.com/iprachigoyal/snake_game/assets/106303603/63c880e7-e726-4efb-a521-12bcd6e5b83b)
+
+
 # 2. File Structure:
 - index.html: Contains the game's HTML structure.
 - style.css: Provides the styling for the game elements.
